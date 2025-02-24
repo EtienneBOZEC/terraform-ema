@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nginx Container</title>
+</head>
+<body>
+    <h1>Welcome to Nginx!</h1>
+    <p>Container Hostname: <span id="hostname"></span></p>
+
+    <script>
+        fetch('/')
+            .then(response => response.headers.get('X-Container-Hostname'))
+            .then(hostname => {
+                document.getElementById('hostname').textContent = hostname;
+            });
+    </script>
+</body>
+</html>

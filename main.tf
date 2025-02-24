@@ -1,5 +1,5 @@
 resource "docker_image" "my_docker" {
-  name         = "var.image"
+  name         = var.image
   keep_locally = true
 }
 

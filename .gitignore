@@ -1,0 +1,16 @@
+# Ignore Terraform related files
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+crash.log
+override.tf
+override.tf.json
+.terraform.lock.hcl
+
+# Ignore environment files
+.env
+
+# Ignore other local configuration files
+.vscode/
+.idea/
